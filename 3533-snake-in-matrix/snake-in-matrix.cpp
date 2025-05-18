@@ -17,10 +17,7 @@ public:
             else{
                 val=val-1;
             }
-
         }
-
-        return val;
-        
+        return val; 
     }
 };
