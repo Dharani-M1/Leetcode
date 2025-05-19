@@ -7,8 +7,7 @@ public:
     n=n-i;
     i=i+1;
    } 
-   return i-1;
-        
+   return i-1;    
     }
 };
 
