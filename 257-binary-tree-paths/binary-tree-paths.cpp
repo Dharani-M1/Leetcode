@@ -13,13 +13,11 @@ class Solution {
     void treePath(TreeNode* root, vector<string>& ans, string temp) {
         if (!root)
             return;
-
         if (!root->left && !root->right) {
             temp += to_string(root->val);
             ans.push_back(temp);
             return;
         }
-
         temp += to_string(root->val) + "->";
         treePath(root->left, ans, temp);
         treePath(root->right, ans, temp);
