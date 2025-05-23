@@ -1,7 +1,7 @@
 class Solution {
 public:
     static bool compare(const vector<int>& a, const vector<int>& b) {
-        return a[1] > b[1];
+    return a[1] > b[1];
     }
     int maximumUnits(vector<vector<int>>& boxTypes, int truckSize) {
         int units = 0;
@@ -10,8 +10,8 @@ public:
             int load = min(boxTypes[i][0], truckSize);
             units += load * boxTypes[i][1];
             truckSize -= load;
-            if (truckSize == 0)
-                break;
+        if (truckSize == 0)
+        break;
         }
         return units;
     }
