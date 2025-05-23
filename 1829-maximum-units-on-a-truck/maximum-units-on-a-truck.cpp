@@ -7,10 +7,10 @@ public:
         int units = 0;
         sort(boxTypes.begin(), boxTypes.end(), compare); 
         for (int i = 0; i < boxTypes.size(); i++) {
-            int load = min(boxTypes[i][0], truckSize);  
-            units += load * boxTypes[i][1];
-            truckSize -= load;
-            if (truckSize == 0) break;
+        int load = min(boxTypes[i][0], truckSize);  
+        units += load * boxTypes[i][1];
+        truckSize -= load;
+        if (truckSize == 0) break;
         }
         return units;
     }
