@@ -1,12 +1,14 @@
+#include <unordered_set>
+#include <vector>
+using namespace std;
+
 class Solution {
 public:
     int findDuplicate(vector<int>& nums) {
-        unordered_map<int, int> ma;
-        for (int i = 0; i < nums.size(); i++) {
-            if (ma.count(nums[i])) {
-                return nums[i]; 
-            }
-            ma[nums[i]] = 1; 
+        unordered_set<int> set;
+        for(int num : nums) {
+            if(set.count(num)) return num;
+            set.insert(num);
         }
         return -1; 
     }
