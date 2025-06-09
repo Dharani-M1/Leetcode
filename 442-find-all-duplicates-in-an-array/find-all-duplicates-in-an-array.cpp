@@ -5,10 +5,10 @@ public:
         vector<int>res;
         for(int num:nums){
             if(ans.count(num)){
-                res.push_back(num);
+            res.push_back(num);
             }
             else{
-                ans.insert(num);
+            ans.insert(num);
             }
         }
         return res;
