@@ -1,7 +1,7 @@
 class Solution {
 public:
     int mostFrequentEven(vector<int>& nums) {
-       unordered_map<int, int> ans;
+        unordered_map<int, int> ans;
 
         for (int num : nums) {
             if (num % 2 == 0) {
@@ -9,7 +9,7 @@ public:
             }
         }
 
-             int maxFreq = 0;
+        int maxFreq = 0;
         int result = -1;
 
         for (auto& pair : ans) {
@@ -23,6 +23,5 @@ public:
         }
 
         return result;
-
     }
 };
