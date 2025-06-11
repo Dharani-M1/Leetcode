@@ -11,12 +11,9 @@ public:
                 }
             }
         }
-
-        
         for (int num : seen) {
             ans.push_back(num);
         }
-
         return ans;
     }
 };
