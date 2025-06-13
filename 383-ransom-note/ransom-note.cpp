@@ -6,7 +6,7 @@ public:
             maga[ch]++;
         }
         for (char ch : ransomNote) {
-            if (maga[ch] <= 0) {
+            if (maga[ch] == 0) {
                 return false;
             }
             maga[ch]--;
