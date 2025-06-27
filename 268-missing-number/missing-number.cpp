@@ -3,12 +3,13 @@ public:
     int missingNumber(vector<int>& nums) {
 
         int res = nums.size();
-        
-        for (int i = 0; i < nums.size(); i++) {
-            res += i - nums[i];
+        int asum=res*(res+1)/2;
+        int sum=0;
+
+        for(int aa:nums){
+            sum+=aa;
         }
         
-        return res; 
-        
+        return asum-sum;
     }
 };
